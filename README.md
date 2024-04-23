@@ -2,14 +2,9 @@
 
 Extract the slide number and title from all slides in a PowerPoint presentation.
 
-## Installation
+## Install from PyPi
 
-```
-git clone https://github.com/phx/pptitles
-cd pptitles
-python3 -m pip install -r requirements.txt
-sudo mv pptitles /usr/local/bin/
-```
+`python3 -m pip install pptitles`
 
 ## Usage:
 
