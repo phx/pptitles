@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='pptitles',
-    version='1.0.9',
+    version='1.0.10',
     scripts=['pptitles'],  # Adjust as needed if it's a file or use glob.glob() for multiple files
     author='phx',
     author_email='phx@example.com',
@@ -20,6 +20,6 @@ setuptools.setup(
     package_dir={"": "."},
     packages=setuptools.find_packages(where="."),
     python_requires=">=3.6",
-    install_requires=['python-pptx']
+    install_requires=['python-pptx>=0.6.23']
 )
 
