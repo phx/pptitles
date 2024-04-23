@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='pptitles',
-    version='1.0.3',
+    version='1.0.4',
     scripts=['pptitles'],  # Adjust as needed if it's a file or use glob.glob() for multiple files
     author='phx',
     author_email='phx@example.com',
