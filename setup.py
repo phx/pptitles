@@ -1,15 +1,12 @@
-import glob
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-binfiles = 'pptitles'
-
 setuptools.setup(
     name='pptitles',
-    version='1.0.2',
-    scripts = binfiles,
+    version='1.0.3',
+    scripts=['pptitles'],  # Adjust as needed if it's a file or use glob.glob() for multiple files
     author='phx',
     author_email='phx@example.com',
     description='Extract the slide number and title from all slides in a PowerPoint presentation.',
@@ -24,3 +21,4 @@ setuptools.setup(
     packages=setuptools.find_packages(where="."),
     python_requires=">=3.6",
 )
+
