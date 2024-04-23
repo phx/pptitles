@@ -8,4 +8,4 @@ Extract the slide number and title from all slides in a PowerPoint presentation.
 
 ## Usage:
 
-`pptitles "/path/to/presentation.pptx"`
+`pptitles -f "/path/to/presentation.pptx"`
