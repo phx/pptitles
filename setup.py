@@ -4,11 +4,11 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-binfiles = glob.glob('bin/*')
+binfiles = 'pptitles'
 
 setuptools.setup(
     name='pptitles',
-    version='1.0.0',
+    version='1.0.1',
     scripts = binfiles,
     author='phx',
     author_email='phx@example.com',
