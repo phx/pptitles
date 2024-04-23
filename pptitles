@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+
+import argparse
 import sys
 import re
 from pptx import Presentation
@@ -50,10 +52,10 @@ def extract_titles(ppt_path):
     return titles
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python script.py 'path_to_presentation.pptx'")
-        sys.exit(1)
-    ppt_path = sys.argv[1]
+    parser = argparse.ArgumentParser(description="Process a PowerPoint file.")
+    parser.add_argument('-f', '--file', required=True, help="The filename of the PowerPoint presentation to process.")
+    args = parser.parse_args()
+    ppt_path = args.file
     titles = extract_titles(ppt_path)
     for slide_number, title in titles:
         print(f"Slide {slide_number}: {title}")
