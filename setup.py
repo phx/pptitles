@@ -8,7 +8,7 @@ binfiles = 'pptitles'
 
 setuptools.setup(
     name='pptitles',
-    version='1.0.1',
+    version='1.0.2',
     scripts = binfiles,
     author='phx',
     author_email='phx@example.com',
